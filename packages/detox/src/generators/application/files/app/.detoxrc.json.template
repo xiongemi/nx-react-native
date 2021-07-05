@@ -5,12 +5,12 @@
     "ios.debug": {
       "type": "ios.app",
       "build": "cd ../<%= appFileName %>/ios && xcodebuild -workspace <%= appClassName %>.xcworkspace -scheme <%= appClassName %> -configuration Debug -derivedDataPath ./build -quiet",
-      "binaryPath": "../<%= appFileName %>/ios/build/Build/Products/Debug-iphonesimulator/<%= appClassName %>.app"
+      "binaryPath": "../<%= appFileName %>/ios/build/Build/Products/Debug-iphoneos/<%= appClassName %>.app"
     },
     "ios.release": {
       "type": "ios.app",
       "build": "cd ../<%= appFileName %>/ios && xcodebuild -workspace <%= appClassName %>.xcworkspace -scheme <%= appClassName %> -configuration Release -derivedDataPath ./build -quiet",
-      "binaryPath": "../<%= appFileName %>/ios/build/Build/Products/Release-iphonesimulator/<%= appClassName %>.app"
+      "binaryPath": "../<%= appFileName %>/ios/build/Build/Products/Release-iphoneos/<%= appClassName %>.app"
     },
     "android.debug": {
       "type": "android.apk",
